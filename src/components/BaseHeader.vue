@@ -29,5 +29,32 @@ export default {
 <style lang="scss" scoped>
 .header {
     display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    max-width: var(--container-lg);
+    margin: auto;
+
+    &__nav ul {
+        display: flex;
+        list-style-type: none;
+    };
+
+    & img {
+        width: 80%;
+    };
+
+    & a {
+        text-decoration: none;
+        margin: 0 .625rem;
+        font-size: .875rem;
+        font-weight: 600;
+        color: var(--fourth-color);
+    };
+
+    & a:hover {
+        color: var(--third-color);
+        border-bottom: 4px solid var(--third-color);
+    }
 }
 </style>
