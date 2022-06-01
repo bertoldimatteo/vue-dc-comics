@@ -29,7 +29,7 @@ export default {
 }
 .title {
     color: var(--first-color);
-    padding: 60px 0;
+    padding: 50px 0;
 }
 .main-footer {
     background-color: var(--third-color);
@@ -38,7 +38,7 @@ export default {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 60px 0;
+    padding: 50px 0;
 
     & img {
         height: 3.75rem;
