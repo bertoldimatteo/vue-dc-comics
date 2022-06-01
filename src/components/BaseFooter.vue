@@ -47,7 +47,7 @@
                 </div>
             </div>
             <div class="footer__image__logo">
-
+                <img src="../assets/img/dc-logo-bg.png" alt="">
             </div>
         </div>
     </footer>
@@ -68,6 +68,12 @@ footer {
 };
 .container {
     padding: 50px 0;
+    display: flex;
+    justify-content: space-between;
+
+    & img {
+        overflow: hidden;
+    }
 
     & h3 {
         color: var(--first-color);
