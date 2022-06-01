@@ -1,17 +1,23 @@
 <template>
   <main class="main">
-      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente laudantium facilis dolore quae ipsum magni inventore placeat voluptas, modi, quibusdam suscipit doloribus ipsam consequuntur numquam quasi officia aut, ratione assumenda?</p>
+      <div class="title container">
+        <h1>Content goes here</h1>
+      </div>
   </main>
 </template>
 
 <script>
 export default {
-    name: 'baseMain', 
+    name: 'BaseMain', 
 }
 </script>
 
 <style lang="scss" scoped>
 .main {
-    background-color: var(--secondary-color);
+    background-color: var(--second-color);
+}
+.title {
+    color: var(--first-color);
+    padding: 60px 0;
 }
 </style>

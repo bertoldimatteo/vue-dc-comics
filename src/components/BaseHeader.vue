@@ -1,5 +1,5 @@
 <template>
-    <header class="header">
+    <header class="header container">
         <div class="header__logo">
             <img src="../assets/img/dc-logo.png" alt=""/>
         </div>
@@ -22,7 +22,7 @@
 
 <script>
 export default {
-    name: 'baseHeader',
+    name: 'BaseHeader',
 }
 </script>
 
@@ -32,8 +32,6 @@ export default {
     align-items: center;
     justify-content: space-between;
     padding: 30px 0;
-    max-width: var(--container-lg);
-    margin: auto;
 
     &__nav ul {
         display: flex;
@@ -50,6 +48,7 @@ export default {
         font-size: .875rem;
         font-weight: 600;
         color: var(--fourth-color);
+        padding-bottom: 3.6875rem;
     };
 
     & a:hover {
