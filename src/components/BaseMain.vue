@@ -4,6 +4,9 @@
       <div class="hero"></div>
       <div class="card-section">
         <div class="container">
+          <div class="button-current-series">
+              <button class="btn btn-big" type="button"><a href="#">CURRENT SERIES</a></button>
+          </div>
           <div class="comic-section">
             <div class="comic-card" v-for="(comic, index) in comics" :key="index">
               <a href="#">
@@ -130,6 +133,7 @@ export default {
 }
 .card-section {
   background-color: var(--second-color);
+  position: relative;
 }
 .comic-section {
   display: flex;
@@ -142,6 +146,7 @@ export default {
 }
 a {
   text-decoration: none;
+  color: #fff;
 }
 .box-image {
   width: 180px;
@@ -159,20 +164,25 @@ a {
     margin-top: 15px;
   }
 }
+.button-current-series {
+  position: absolute;
+  top: -20px;
+  left: 610px;
+}
 .button-load-more {
   display: flex;
   justify-content: center;
   padding-bottom: 20px;
 }
+.btn-big a {
+  font-size: 1.125rem;
+}
 .btn {
   padding: 10px 45px;
   border: none;
   background-color: var(--third-color);
-  
-
-  & a {
-    color: #fff;
-    font-size: .75rem;
-  }
+  color: #fff;
+  font-size: .75rem;
+  font-weight: 500;
 }
 </style>
