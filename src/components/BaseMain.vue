@@ -167,7 +167,6 @@ a {
 .button-current-series {
   position: absolute;
   top: -20px;
-  left: 610px;
 }
 .button-load-more {
   display: flex;
