@@ -16,6 +16,9 @@
               </a>
             </div>
           </div>
+          <div class="button-load-more">
+              <button class="btn" type="button"><a href="#">LOAD MORE</a></button>
+          </div>
         </div>
       </div>
     </div>
@@ -154,6 +157,22 @@ a {
    & p {
     color: #fff;
     margin-top: 15px;
+  }
+}
+.button-load-more {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.btn {
+  padding: 10px 45px;
+  border: none;
+  background-color: var(--third-color);
+  
+
+  & a {
+    color: #fff;
+    font-size: .75rem;
   }
 }
 </style>
