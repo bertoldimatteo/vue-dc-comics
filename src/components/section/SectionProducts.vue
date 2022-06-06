@@ -1,23 +1,20 @@
 <template>
   <section>
         <div class="comic-section">
-            <div class="comic-card" v-for="(comic, index) in comics" :key="index">
-                <a href="#">
-                <div class="box-image">
-                    <img :src="comic.thumb" alt="">
-                </div>
-                <div class="comic-title">
-                    <p>{{comic.series}}</p>
-                </div>
-                </a>
+            <div v-for="(comic, index) in comics" :key="index">
+                <cardProduct :thumb="comic.thumb" :series="comic.series"/>
             </div>
         </div>
   </section>
 </template>
 
 <script>
+import cardProduct from '../commons/cardProduct.vue';
 export default {
     name: 'SectionProducts',
+    components: {
+        cardProduct
+    },
       data() {
         return {
         comics: [
@@ -117,24 +114,5 @@ export default {
   flex-wrap: wrap;
   gap: 30px;
   padding: 50px 0;
-}
-.comic-card {
-  max-width: 180px;
-}
-.box-image {
-  width: 180px;
-  height: 180px;
-  background-color: aqua;
-  display: flex;
-  overflow: hidden;
-  align-items: flex-start;
-}
-.comic-title {
-  width: 100%;
-
-   & p {
-    color: #fff;
-    margin-top: 15px;
-  }
 }
 </style>
