@@ -2,9 +2,6 @@
     <footer>
         <div class="footer-top">
             <div class="title">
-                <div class="container">
-                    <h1>Content goes here</h1>
-                </div>
                 </div>
                 <div class="main-footer">
                 <div class="container-secondary shop">
@@ -182,10 +179,6 @@ export default {
 }
 .footer-top {
     background-color: var(--second-color);
-}
-.title {
-    color: var(--first-color);
-    padding: 50px 0;
 }
 .main-footer {
     background-color: var(--third-color);
